@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.link-content {
+    padding-top: 2rem;
+}

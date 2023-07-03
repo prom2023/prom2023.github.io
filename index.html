@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROM 2023</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-md-8 link-content ">
+                <header class="d-flex flex-column align-items-center" style="color: #FFFFFF">
+                    <div class="d-flex flex-row align-items-center mt-4">
+                        <h1 id="title">Nombre del Estudiante</h1>
+                    </div>
+                    <p id="description">Aquí podrás acceder a tus valiosos recuerdos capturados en fotografías y videos.🤩 Podrás visualizar y descargar todo tu contenido para conservarlo siempre. ♥ Te deseamos mucho éxito en tu camino y que todo marche maravillosamente bien. 😉🌟
+                    </p>
+                </header>
+
+                <main id="links" class="my-3">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <a href="" id="linkPhotos" class="btn btn-outline-light w-100 rounded-pill">
+                                <img src="./img/GooglePhotos.png" alt="Google Photos" class="float-start">
+                                Fotos
+                                <img src="./img/GooglePhotos.png" alt="Google Photos" class="float-end">
+                            </a>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <a href="" class="btn btn-outline-light w-100 rounded-pill" target="_blank">
+                                <img src="./img/youtube.png" alt="Youtube" class="float-start">
+                                Video 1
+                                <img src="./img/youtube.png" alt="Youtube" class="float-end">
+                            </a>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <a href="" class="btn btn-outline-light w-100 rounded-pill">
+                                <img src="./img/youtube.png" alt="Youtube" class="float-start">
+                                Video 2
+                                <img src="./img/youtube.png" alt="Youtube" class="float-end">
+                            </a>
+                        </div>
+
+                        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+                            <a href="https://www.instagram.com/adibnavac/" class="btn">
+                                <img src="./img/instagram.png" alt="Youtube" class="me-1">
+                                <small class="btn-link text-white">adibnavac                                </small> 😊📸
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Obtener los parametros de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        title.innerText = urlParams.get('name') ?? 'Nombre del Estudiante';
+        const linkPhotos = document.getElementById("linkPhotos");
+        linkPhotos.href = urlParams.get('link') ?? '';
+    </script>
+</body>
+
+</html>
