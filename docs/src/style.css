@@ -3,7 +3,7 @@ body {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(5, 7, 12, 0.35), rgba(5, 7, 12, 0)), url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -13,4 +13,14 @@ body {
 
 .link-content {
     padding-top: 2rem;
+}
+
+.btn {
+    background-color: rgb(255 255 255 / 37%);
+    border-color: rgb(255 255 255 / 37%);
+    color: black;
+}
+
+.btn-instagram:hover {
+    background-color: rgb(39 34 34 / 62%);
 }
