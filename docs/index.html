@@ -79,7 +79,12 @@
         const urlParams = new URLSearchParams(window.location.search);
         title.innerText = urlParams.get('name') ?? 'Nombre del Estudiante';
         const linkPhotos = document.getElementById("linkPhotos");
-        linkPhotos.href = urlParams.get('link') ?? '';
+
+        if (!urlParams.get('link') && urlParams.get('name') === "Santiago") {
+            linkPhotos.href = "https://photos.app.goo.gl/bGcqynxQEXfAKbEA8";
+        } else {
+            linkPhotos.href = urlParams.get('link') ?? '';
+        }
     </script>
 </body>
 
